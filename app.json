@@ -1,0 +1,12 @@
+{
+  "name": "chatteste",
+  "displayName": "chatteste",
+  "expo": {
+    "name": "chatteste",
+    "slug": "chatteste",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
