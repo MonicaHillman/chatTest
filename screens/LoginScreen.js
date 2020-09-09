@@ -1,7 +1,5 @@
 import React from "react";
 import {View, Text, StyleSheet, TextInput, TouchableOpacity, Image} from "react-native";
-import {IonIcons} from '@expo/vector-icons';
-
 export default class Logincreen extends React.Component {
     state = {
         name: ""
@@ -17,19 +15,19 @@ export default class Logincreen extends React.Component {
                 <View style={styles.circle} />
                 <View style={{marginTop: 64}}>
                     <Image source={require('../assets/chat.png')} 
-                    style={{width: 100, height: 100, alignSelf: "center"}}/>
+                    style={{width: 300, height: 300, alignSelf: "center"}}/>
                 </View>
                 <View style={{marginHorizontal: 32}}>
-                <Text style={styles.header}>Username</Text>
+                <Text style={styles.header}>Nome</Text>
                 <TextInput style={styles.input} 
-                placeholder="DesignIntoCode" 
+                placeholder="Insira seu nome" 
                 onChangeText={name=>{this.setState({name});
                 }} 
                 value={this.state.name}
                 />
                 <View style={{alignItems: "flex-end", marginTop: 64}}>
                     <TouchableOpacity style={styles.continue} onPress={this.continue}>
-                    <Image name="md-arrow-round-forward" size={24} color="#FFF" />
+                    <Text>OK</Text>
                     </TouchableOpacity>
                 </View>
                 </View>
@@ -72,7 +70,7 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 70/2,
-        backgroundColor: "#9075E3",
+        backgroundColor: "#b22c1b",
         alignItems: "center",
         justifyContent: "center"
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Plataform, KeyboardAvoidingView, SafeAreaView } from "react-native";
+import { SafeAreaView } from "react-native";
 import { GiftedChat } from "react-native-gifted-chat";
 import Fire from "../Fire";
 
